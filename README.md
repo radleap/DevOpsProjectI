@@ -21,7 +21,18 @@
         - sudo apt-get install git
         - confirm installation
             - git --version
+    - Installing Jenkins
+        - sudo apt update
+        - sudo apt install yum
+        - wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+        - 
     
-
+3. Procuring AWS Ubuntu Slave Node
+    - in master node
+    - git clone repo
+    - add AWS key/secret
+    - sudo terraform init
+    - sudo terraform apply ... yes
+    - desssstroy
 
 
