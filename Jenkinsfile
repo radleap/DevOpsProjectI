@@ -26,7 +26,7 @@ pipeline {
     // Builds Docker image and container (via test_run.sh)
     // Creates an image with a conda environment activated for tableau_dash, and mounts mindful_WIP as volume, runs py script
     stage('Building Docker Run Sh') {
-      steps {
+      steps {  
         sh "${env.WORKSPACE}/run.sh"
       }
     }
