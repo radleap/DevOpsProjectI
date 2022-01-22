@@ -27,6 +27,7 @@ pipeline {
     // Creates an image with a conda environment activated for tableau_dash, and mounts mindful_WIP as volume, runs py script
     stage('Building Docker Run Sh') {
       steps {
+        sh "chmod +x -R ${env.WORKSPACE}"
         sh "chmod -x ${env.WORKSPACE}/run.sh"  
         sh "${env.WORKSPACE}/run.sh"
       }
