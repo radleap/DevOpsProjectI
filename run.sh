@@ -1,5 +1,5 @@
 #! /bin/sh
-
+pwd
 echo "Yahooooooooo testingggg"
 # docker build -t flask-sample:latest .
 # pwd
